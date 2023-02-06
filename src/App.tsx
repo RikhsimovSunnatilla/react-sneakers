@@ -5,7 +5,7 @@ import Home from './pages/home';
 
 function App() {
   return (
-    <div className="container rounded-3xl bg-white shadow-md">
+    <div className="container my-12 rounded-3xl bg-white shadow-md">
       <Header />
 
       <Routes>
