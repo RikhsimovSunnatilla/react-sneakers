@@ -8,7 +8,7 @@ import logo from '../../assets/images/logo.png';
 
 function Header() {
   return (
-    <header className="flex items-center justify-between border-b border-stone-200 p-11">
+    <header className="flex items-center justify-between border-b border-gray-200 p-11">
       <Link to={'/'} className="flex items-center">
         <img src={logo} width={40} height={40} className="mr-4 inline-block" alt="Logo" />
         <div>

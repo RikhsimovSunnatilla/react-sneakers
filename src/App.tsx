@@ -5,12 +5,11 @@ import Home from './pages/home';
 
 function App() {
   return (
-    <div className="container my-12 rounded-3xl bg-white shadow-md">
+    <div className="container my-11 rounded-3xl bg-white shadow-md ">
       <Header />
 
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/books" element={<BookList />} /> */}
       </Routes>
     </div>
   );
