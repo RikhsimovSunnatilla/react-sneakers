@@ -7,13 +7,9 @@ import CheckIcon from '../Icons/CheckIcon';
 import productImg from '../../assets/images/sneakers/1.jpg';
 
 function ProductCard() {
-  const isLoading = true;
+  const isLoading = false;
   const isSaved = false;
   const isAdded = false;
-
-  // if (isLoading) {
-  //   return <Skeleton />;
-  // }
 
   return (
     <div className="relative w-56 rounded-3xl border border-solid border-gray-200 bg-white px-8 pt-5 pb-8 transition-all hover:-translate-y-1 hover:shadow-lg">

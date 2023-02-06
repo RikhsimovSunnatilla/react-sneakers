@@ -1,7 +1,16 @@
+import { useEffect } from 'react';
+
 import Header from './Header';
 import ProductCard from '../../components/ProductCard';
 
+import { fetchProducts } from '../../services/product';
+
 function Home() {
+  useEffect(() => {
+    const products = fetchProducts();
+    console.log(products);
+  }, []);
+
   return (
     <div className="px-11 py-9">
       <Header />
