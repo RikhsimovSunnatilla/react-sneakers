@@ -5,7 +5,7 @@ import Header from './Header';
 import ProductCard from '../../components/ProductCard';
 import Skeleton from '../../components/ProductCard/Skeleton';
 
-import { Product } from '../../types/Product.1';
+import { Product } from '../../types/product';
 
 function Home() {
   const [products, setProducts] = useState<Product[]>([]);
