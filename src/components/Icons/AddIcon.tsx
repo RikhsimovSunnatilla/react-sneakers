@@ -1,8 +1,8 @@
 interface AddIconProps {
-  className: string;
+  className?: string;
 }
 
-function AddIcon({ className }: AddIconProps) {
+function AddIcon({ className = '' }: AddIconProps) {
   return (
     <svg
       className={className}

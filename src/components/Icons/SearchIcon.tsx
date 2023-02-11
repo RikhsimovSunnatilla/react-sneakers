@@ -1,8 +1,8 @@
 interface SearchIconProps {
-  className: string;
+  className?: string;
 }
 
-function SearchIcon({ className }: SearchIconProps) {
+function SearchIcon({ className = '' }: SearchIconProps) {
   return (
     <svg
       className={className}

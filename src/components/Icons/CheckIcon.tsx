@@ -1,8 +1,8 @@
 interface CheckIconProps {
-  className: string;
+  className?: string;
 }
 
-function CheckIcon({ className }: CheckIconProps) {
+function CheckIcon({ className = '' }: CheckIconProps) {
   return (
     <svg
       className={className}

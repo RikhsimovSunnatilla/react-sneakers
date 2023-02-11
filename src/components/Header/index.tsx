@@ -4,7 +4,11 @@ import CartIcon from '../Svg/CartIcon';
 import HeartIcon from '../Svg/HeartIcon';
 import UserIcon from '../Svg/UserIcon';
 
-function Header() {
+interface HeaderProps {
+  openDrawer: () => void;
+}
+
+function Header({ openDrawer }: HeaderProps) {
   return (
     <header className="flex items-center justify-between border-b border-gray-200 p-11">
       <Link to={'/'} className="flex items-center">
@@ -16,10 +20,10 @@ function Header() {
       </Link>
 
       <div className="grid auto-cols-max grid-flow-col items-center gap-x-5">
-        <Link to={'/'} className="flex items-center py-1">
+        <button className="flex items-center py-1" onClick={openDrawer}>
           <CartIcon />
           <span className="ml-2 text-sm font-semibold text-slate-600">1205 руб.</span>
-        </Link>
+        </button>
         <Link to={'/saveds'} className="p-1">
           <HeartIcon />
         </Link>

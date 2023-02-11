@@ -6,9 +6,10 @@ module.exports = {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
       },
+      spacing: {
+        100: '25rem',
+      },
     },
-  },
-  theme: {
     container: {
       center: true,
       screens: {
